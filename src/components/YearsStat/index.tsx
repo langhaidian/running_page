@@ -12,7 +12,7 @@ const YearsStat = ({ year, onClick }: { year: string, onClick: (_year: string) =
 
   // for short solution need to refactor
   return (
-    <div className="fl w-100-l pb5 pr50-l">
+    <div className="fl w-100-l pb50 pr50-l">
       <section className="pb4" style={{ paddingBottom: '0rem' }}>
         <p style={{ lineHeight: 1.8 }}>
           {INFO_MESSAGE(years.length, year)}
