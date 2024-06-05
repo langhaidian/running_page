@@ -29,7 +29,7 @@ env:
   ATHLETE: langhaidian
   TITLE: langhaidian running
   MIN_GRID_DISTANCE: 3 # change min distance here
-  TITLE_GRID: Over 5km Runs # also here
+  TITLE_GRID: Over 15km Runs # also here
   GITHUB_NAME: langhaidian # change to yours
   GITHUB_EMAIL: 476982265@qq.com # change to yours
 
