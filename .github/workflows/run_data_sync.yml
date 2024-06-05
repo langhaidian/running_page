@@ -203,7 +203,7 @@ jobs:
         # python run_page/oppo_sync.py ${{ secrets.OPPO_ID }} ${{ secrets.OPPO_CLIENT_SECRET }} ${{ secrets.OPPO_CLIENT_REFRESH_TOKEN }} --with-gpx
 
       - name: Make svg GitHub profile
-        if: env.RUN_TYPE != 'strava'
+        if: env.RUN_TYPE != 'pass'
         run: |
           python run_page/gen_svg.py --from-db --title "${{ env.TITLE }}" --type github --athlete "${{ env.ATHLETE }}" --special-distance 3 --special-distance2 15 --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --min-distance 0.5
           python run_page/gen_svg.py --from-db --title "${{ env.TITLE_GRID }}" --type grid --athlete "${{ env.ATHLETE }}" --output assets/grid.svg --special-color yellow --special-color2 red --special-distance 4 --special-distance2 15 --use-localtime --min-distance "${{ env.MIN_GRID_DISTANCE }}"
